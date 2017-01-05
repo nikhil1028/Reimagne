@@ -40,6 +40,7 @@
 	background-color: white;
     top: 50%;
     transform: translate(-50%,-50%);
+    font-family: BebasNeue_Book;
 }
 
 /* The navigation links inside the overlay */

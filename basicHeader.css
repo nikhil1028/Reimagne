@@ -5,6 +5,10 @@ header{
 	background-color: #0b5ca1 ;
 }
 
+header h2{
+	margin: 0;
+}
+
 @font-face {
     font-family: BebasNeue_Bold;
     src: url(fonts/BebasNeue_Bold.otf);
@@ -30,7 +34,7 @@ header{
 	color: rgb(132, 194, 73);
 	font-family: BebasNeue_Thin;
 	padding-top: 1px;
-	letter-spacing: 15.3px;
+	letter-spacing: 15.2px;
 	margin: 0px 0px 0px 11px;
 }
 
@@ -44,12 +48,27 @@ header{
 	background-color: #221f1f;
 	border-bottom: 4px solid #00a8e3;
 }
+.exploreButton, #registrationDiv{
+	line-height: 173%;
+	margin: 1% 0;
+}
 
 .exploreButton, #registration{
 	cursor: pointer;
-	margin: 5px;
-	line-height: 170%;
+	letter-spacing: 1.5px;
+	font-family: BebasNeue_Light;
 }
+
+#LogInDiv{
+	text-align:left;
+	padding-left: 10px;
+}
+#SignUpDiv{
+	text-align:right;
+	padding-right: 10px;
+	border-right: 3px solid white;
+}
+
 .title{
 	display: inline-block;
 	width: 50%;
@@ -65,17 +84,21 @@ header{
 	margin-left: 20px !important;
 }
 
-#registration{
-	display: inline-block;
-	float: right;
-	margin-right: 20px !important;
-}
-
 #Profile{
+	float: right;
 	display: none;
+	line-height: 173%;
+	margin: 1% 0;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	font-family: BebasNeue_Light;
+    position: relative;
+	text-align: right;
 }
 
-.dropdown h2{
-	margin: 0;
-	border: none;
+#Profile h2{
+	margin-right: 20px;
+}
+.SingingIn{
+	text-align : right;
 }

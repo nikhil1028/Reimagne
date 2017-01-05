@@ -4,16 +4,6 @@
     cursor: pointer;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-	border-bottom: 1px solid;
-	border-bottom-color: white;
-	margin: 5px;
-	float: right;
-	margin-right: 20px !important;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -42,6 +32,6 @@
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdown-content p:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
+#Profile:hover .dropdown-content {
     display: block;
 }

@@ -19,6 +19,7 @@
 <body>
 	<header>
 		<div class="headerText row">
+			<div class="col-3">
 			<h2 class="exploreButton"><span onclick="openNav()">Explore</span></h2>
 				<div id="myNav" class="explore">
 					<!-- Button to close the explorer -->
@@ -78,9 +79,14 @@
 						</form>
 					</div>
 				</div>
+			</div>
+			<div class="col-6">
 			<a href="index.html"><div class="title"><h2 class="titleReimagine">Re!magine</h2><h2 class="titleGiving">Giving</h2></div></a>
-			<h2 id="registration"><span onclick="openSignUpOverlay()">Log In</span></h2>
-				<div id="SignUp" class="overlay">
+			</div>
+			<div class="col-3" id="registrationDiv">
+			<div id="SignUpDiv" class="col-9">
+				<h2 id="registration"><span clas="SignUpSpan" onclick="openSignUpOverlay()">Sign Up</span></h2>
+					<div id="SignUp" class="overlay">
 					<div class="transparentContainer">
 						<div class="translucentContainer"></div>
 							<!-- overlay content -->
@@ -125,8 +131,7 @@
 											</div>
 										</div>
 										<div class="inputFieldHeadings row">
-											<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
-											<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login</span></p>
+											<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
 										</div>
 									</div>
 								</form>
@@ -163,12 +168,22 @@
 										</div>
 									</div>
 									<div class="inputFieldHeadings row">
-										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
-										<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login	</span></p>
+										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
 									</div>
 								</div>
-							</form>
+								</form>
+								</div>
 							</div>
+						</div>
+					</div>
+			</div>
+			<div id="LogInDiv" class="col-3">
+			<h2 id="registration"><span onclick="openLogInOverlay()">Log In</span></h2>
+				<div id="LogIn" class="overlay">
+					<div class="transparentContainer">
+						<div class="translucentContainer"></div>
+							<!-- overlay content -->
+						<div class="overlay-content">
 							<div id="LogInOverlay">
 								<ul class="registrationTabs">
 									<li><h2>LOGIN</h2></li>
@@ -197,7 +212,9 @@
 						</div>
 					</div>
 				</div>
-			<div class="dropdown" id="Profile">
+			</div>
+			</div>
+			<div class="col-3" id="Profile">
 				<h2><a class="dropbtn">Donor</a></h2>
 				<div class="dropdown-content">
 					<a href="#">My Profile</a>
@@ -222,35 +239,35 @@
 	
 	<div class="mainStats row">
 		<div class="mainStats1 col-3">
-			<div class="mainStatsNumber row">
-				<p>Rs 900000</p>
-			</div>
-			<div class="mainStatsText row">
+			<div class="mainStatsText col-4">
 				<p>Raised</p>
+			</div><br>
+			<div class="mainStatsNumber col-4">
+				<p>Rs 900000</p>
 			</div>
 		</div>
 		<div class="mainStats2 col-3">
-			<div class="mainStatsNumber row">
-				<p>Rs 1000000</p>
-			</div>
-			<div class="mainStatsText row">
+			<div class="mainStatsText col-4">
 				<p>Required</p>
+			</div>
+			<div class="mainStatsNumber col-4">
+				<p>Rs 1000000</p>
 			</div>
 		</div>
 		<div class="mainStats3 col-3">
-			<div class="mainStatsNumber row">
-				<p>912</p>
-			</div>
-			<div class="mainStatsText row">
+			<div class="mainStatsText col-4">
 				<p>Backers</p>
+			</div>
+			<div class="mainStatsNumber col-4">
+				<p>912</p>
 			</div>
 		</div>
 		<div class="mainStats4 col-3">
-			<div class="mainStatsNumber row">
-				<p>912</p>
-			</div>
-			<div class="mainStatsText row">
+			<div class="mainStatsText col-4">
 				<p>Backers</p>
+			</div>
+			<div class="mainStatsNumber col-4">
+				<p>912</p>
 			</div>
 		</div>
 	</div>
@@ -284,8 +301,8 @@
 					<div class="thumbnail">
 						<img class="img-thumbnail" src="DSC_0115.jpg" >
 						<div class="locationCause row">
-							<div class="col-6"><p style="float:left">Cause</p></div>
-							<div class="col-6"><p style="float:right">Location</p></div>
+							<div class="cause col-8"><p style="float:left">Cause</p></div>
+							<div class="location col-4"><p style="float:right">Location</p></div>
 						</div>
 					</div>
 					<div class="projectDetails">
@@ -295,36 +312,35 @@
 					</div>
 					<div class="projectStats">
 						<div class="progressReport row">
-							<div class="progressNumber col-6">
+							<div class="progress col-10">
+								<progress  id="progressbar" value="90" max="100"></progress>
+							</div>
+							<div class="progressNumber col-2">
 								<p>90%</p>
 							</div>
-							<div class="progressText col-6">
-								<p>Completed</p>
-							</div>
 						</div>
-						<div class="progress"><progress  id="progressbar" value="90" max="100"></progress></div>
 						<div class="row">
 							<div class="Stats1 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Raised</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 900000</p>
 								</div>
 							</div>
 							<div class="Stats2 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Required</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 1000000</p>
 								</div>
 							</div>
 							<div class="Stats3 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Backers</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>912</p>
 								</div>
 							</div>
@@ -338,8 +354,8 @@
 						<div class="thumbnail w3-container">
 							<img class="img-thumbnail" src="DSC_0126_.jpg" >
 							<div class="locationCause row">
-								<div class="col-6"><p style="float:left">Cause</p></div>
-								<div class="col-6"><p style="float:right">Location</p></div>
+								<div class="cause col-8"><p style="float:left">Cause</p></div>
+								<div class="location col-4"><p style="float:right">Location</p></div>
 							</div>
 						</div>
 					</div>
@@ -350,36 +366,35 @@
 					</div>
 					<div class="projectStats">
 						<div class="progressReport row">
-							<div class="progressNumber col-6">
+							<div class="progress col-10">
+								<progress id="progressbar" value="30" max="100"></progress>
+							</div>
+							<div class="progressNumber col-2">
 								<p>30%</p>
 							</div>
-							<div class="progressText col-6">
-								<p>Completed</p>
-							</div>
 						</div>
-						<div class="progress row"><progress id="progressbar" value="30" max="100"></progress></div>
 						<div class="row">
 							<div class="Stats1 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Raised</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 600000</p>
 								</div>
 							</div>
 							<div class="Stats2 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Required</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 2000000</p>
 								</div>
 							</div>
 							<div class="Stats3 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Backers</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>543</p>
 								</div>
 							</div>
@@ -393,8 +408,8 @@
 						<div class="thumbnail">
 							<img class="img-thumbnail" src="DSC_0133__.jpg" >
 							<div class="locationCause row">
-								<div class="col-6"><p style="float:left">Cause</p></div>
-								<div class="col-6"><p style="float:right">Location</p></div>
+								<div class="cause col-8"><p style="float:left">Cause</p></div>
+								<div class="location col-4"><p style="float:right">Location</p></div>
 							</div>
 						</div>
 					</div>
@@ -405,38 +420,37 @@
 					</div>
 					<div class="projectStats">
 						<div class="progressReport row">
-							<div class="progressNumber col-6">
+							<div class="progress col-10">
+								<progress  id="progressbar" value="50" max="100"></progress>
+							</div>
+							<div class="progressNumber col-2">
 								<p>50%</p>
 							</div>
-							<div class="progressText col-6">
-								<p>Completed</p>
-							</div>
 						</div>
-						<div class="progress"><progress id="progressbar" value="50" max="100" ></progress></div>
 						<div class="row">
 							<div class="Stats1 col-4">
 								
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Raised</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 250000</p>
 								</div>
 							</div>
 							<div class="Stats2 col-4">
 								
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Required</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 500000</p>
 								</div>
 							</div>
 							<div class="Stats3 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Backers</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>402</p>
 								</div>
 							</div>
@@ -450,8 +464,8 @@
 						<div class="thumbnail">
 							<img class="img-thumbnail" src="DSC_0115.jpg" >
 							<div class="locationCause row">
-								<div class="col-6"><p style="float:left">Cause</p></div>
-								<div class="col-6"><p style="float:right">Location</p></div>
+								<div class="cause col-8"><p style="float:left">Cause</p></div>
+								<div class="location col-4"><p style="float:right">Location</p></div>
 							</div>
 						</div>
 					</div>
@@ -462,36 +476,35 @@
 					</div>
 					<div class="projectStats">
 						<div class="progressReport row">
-							<div class="progressNumber col-6">
+							<div class="progress col-10">
+								<progress  id="progressbar" value="40" max="100"></progress>
+							</div>
+							<div class="progressNumber col-2">
 								<p>40%</p>
 							</div>
-							<div class="progressText col-6">
-								<p>Completed</p>
-							</div>
 						</div>
-						<div class="progress"><progress id="progressbar" value="40" max="100"></progress></div>
 						<div class="row">
 							<div class="Stats1 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Raised</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 1026800</p>
 								</div>
 							</div>
 							<div class="Stats2 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Required</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>Rs 2567000</p>
 								</div>
 							</div>
 							<div class="Stats3 col-4">
-								<div class="StatsText row">
+								<div class="StatsText col-9">
 									<p>Backers</p>
 								</div>
-								<div class="StatsNumber row">
+								<div class="StatsNumber col-9">
 									<p>712</p>
 								</div>
 							</div>
