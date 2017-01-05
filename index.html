@@ -91,13 +91,13 @@
 						<div class="translucentContainer"></div>
 							<!-- overlay content -->
 						<div class="overlay-content">
-							
+							<div class="overlay-content1">
 							<div id="SignUpForms">
-								<ul class="registrationTabs">
-									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
-									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
-									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
-								</ul>
+								<div class="registrationOptions row">
+									<div class="optionDonorHeading col-3"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Donor</a></div>
+									<div class="col-2"><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">NGO</a></div>
+									<div class="col-7"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></div>
+								</div>
 								<form>
 									<div id="Donor" class="tabcontent">
 										<div class="inputFieldHeadings">
@@ -131,7 +131,7 @@
 											</div>
 										</div>
 										<div class="inputFieldHeadings row">
-											<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+											<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
 										</div>
 									</div>
 								</form>
@@ -168,13 +168,14 @@
 										</div>
 									</div>
 									<div class="inputFieldHeadings row">
-										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+										<span onclick="SignMeUp()"><h2 id="SignUpButton">Sign Up!</h2></span>
 									</div>
 								</div>
 								</form>
 								</div>
 							</div>
 						</div>
+					</div>
 					</div>
 			</div>
 			<div id="LogInDiv" class="col-3">
@@ -185,10 +186,10 @@
 							<!-- overlay content -->
 						<div class="overlay-content">
 							<div id="LogInOverlay">
-								<ul class="registrationTabs">
-									<li><h2>LOGIN</h2></li>
-									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a></li>
-								</ul>
+								<div class="registrationOptions row">
+									<div class="LoginOption col-5"><h2>LOGIN</h2></div>
+									<div class="col-7"><a href="javascript:void(0)" class="Loginclosebtn tablinks" onclick="closeLogInOverlay()">&times;</a></div>
+								</div>
 								<form>
 									<div id="LogInDetails">
 										<div class="inputFieldHeadings">
@@ -204,7 +205,7 @@
 											</div>
 										</div>
 										<div class="inputFieldHeadings row">
-												<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">LogIn</span></h2>
+												<span onclick="SignMeUp()"><h2 id="SignUpButton" class="col-6">LogIn</h2></span>
 										</div>
 									</div>
 								</form>
