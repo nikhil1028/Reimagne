@@ -21,7 +21,6 @@ footer{
 	display: inline-block;
 	margin-top: 0.7%;
 	margin-bottom: 0.7%;
-	align-content: center;
 }
 .mainStats1, .mainStats2, .mainStats3{
 	border-right: 4px solid white;
@@ -35,6 +34,7 @@ footer{
 	font-weight: bold;
 	color: white;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 .mainStatsText > p{
@@ -45,15 +45,20 @@ footer{
 	color: white;
 	text-align: center;
 	border-bottom: 2px solid white;
+	letter-spacing: 1px;
 }
 
 
 /*about_us*/
 .about_us{
-	max-width:100%;
+	width:100%;
 	padding: 0;
 	margin: 0;
-	background: #092d3d ;
+	background: #092d3d;
+}
+
+.about_us.row{
+	height: 40vw;
 }
 
 .heading_in_about_us{
@@ -72,25 +77,67 @@ footer{
 	padding-bottom: 0.75%;
 }
 
-.about_us > p {
-	font-size: 15px;
-	color: white;
-	text-align: center;
-}
-
 .about_us.sect1, .about_us.sect2, .about_us.sect3{
-	padding-bottom: 1%;
-	padding: 1%;
 	display: inline-block;
 	float: left;
+	color: white;
+	font-family: BebasNeue_Bold;
+	height: 16.2vw;
+	background-size: cover;
+}
+.about_us.sect1 h2, .about_us.sect2 h2, .about_us.sect3 h2{
+	margin: 0;
+	letter-spacing: 1px;
+}
+.about_us.sect1{
+	background-image: url(aboutUs1.png);
+}
+.about_us.sect2{
+	background-image: url(aboutUs2.png);
+}
+.about_us.sect3{
+	background-image: url(aboutUs3.png);
+}
+.aboutUsStats.number1{
+	font-size: 35pt;
+	text-align: left;
+	margin-top: 3% !important;
+	margin-left: 23% !important;
+}
+.aboutUsStats.number2{
+	font-size: 35pt;
+	text-align: center;
+	margin-top: 11% !important;
+	margin-left: -17% !important;
+}
+.aboutUsStats.number3{
+	font-size: 35pt;
+	text-align: center;
+	margin-top: 4% !important;
+	margin-top: 50px;
+	margin-left: -2% !important;
+}
+.aboutUsStats.text1{
+	font-size: 22pt;
+	font-family: BebasNeue_Thin;
+	text-align: center;
+	line-height: 0%;
+}
+.aboutUsStats.text2{
+	font-size: 22pt;
+	font-family: BebasNeue_Thin;
+	text-align: center;
+	line-height: 0%;
+}
+.aboutUsStats.text3{
+	font-size: 22pt;
+	font-family: BebasNeue_Thin;
+	text-align: center;
+	line-height: 0;
+	margin-left: 31% !important;
 }
 
-.hInSect{
-	text-align: center;
-	font-size: 20px;
-	color: white;
-	margin-top: 20px;
-}
+
 
 /*projects*/
 .projects{
@@ -192,7 +239,7 @@ footer{
 	opacity: 0.7;
 }
 .location{
-	font-size: 10px;
+	font-size: 13px;
 	bottom: 5px;
 	right: 0;
 	position: absolute; 
