@@ -1,0 +1,81 @@
+header{
+	text-align: center;
+	color: white;
+	margin:0;
+	background-color: #0b5ca1 ;
+}
+
+@font-face {
+    font-family: BebasNeue_Bold;
+    src: url(fonts/BebasNeue_Bold.otf);
+}
+@font-face {
+    font-family: BebasNeue_Book;
+    src: url(fonts/BebasNeue_Book.otf);
+}
+@font-face {
+    font-family: BebasNeue_Light;
+    src: url(fonts/BebasNeue_Light.otf);
+}
+@font-face {
+    font-family: BebasNeue_Thin;
+    src: url(fonts/BebasNeue_Thin.otf);
+}
+@font-face {
+    font-family: BebasNeue_Regular;
+    src: url(fonts/BebasNeue_Regular.otf);
+}
+
+.titleGiving{
+	color: rgb(132, 194, 73);
+	font-family: BebasNeue_Thin;
+	padding-top: 1px;
+	letter-spacing: 15.3px;
+	margin: 0px 0px 0px 11px;
+}
+
+.titleReimagine{
+	letter-spacing: 4px;
+	margin: 5px 9px 9px;
+	font-family: BebasNeue_Regular;
+}
+
+.headerText{
+	background-color: #221f1f;
+	border-bottom: 4px solid #00a8e3;
+}
+
+.exploreButton, #registration{
+	cursor: pointer;
+	margin: 5px;
+	line-height: 170%;
+}
+.title{
+	display: inline-block;
+	width: 50%;
+	margin: 5px;
+	color: white !Important;
+	cursor: pointer;
+	line-height: 85%;
+}
+
+.exploreButton{
+	display: inline-block;
+	float: left;
+	margin-left: 20px !important;
+}
+
+#registration{
+	display: inline-block;
+	float: right;
+	margin-right: 20px !important;
+}
+
+#Profile{
+	display: none;
+}
+
+.dropdown h2{
+	margin: 0;
+	border: none;
+}

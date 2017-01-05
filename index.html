@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Re!magine Giving</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="basicHeader.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="SignUp.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="dropdown.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="responsiveIndex.css" media="screen"/>
+	
+	<script src="SignUp.js"></script>
+	<script src="explore.js"></script>
+	<script src="slideshow.js"></script>
+</head>
+  
+<body>
+	<header>
+		<div class="headerText row">
+			<h2 class="exploreButton"><span onclick="openNav()">Explore</span></h2>
+				<div id="myNav" class="explore">
+					<!-- Button to close the explorer -->
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+					<!-- explore content -->
+					<div class="explore-content">
+						<form>
+							<div class="location">
+								<h2>Location</h2>
+								<div class="inputField">
+									<input type="text" name="search" placeholder="Location..">
+								</div>
+							</div>
+							
+							<div class="funding">
+								<h2>Funding</h2>
+								<div class="fundingLevels">
+									<input type="radio" name="fundingLevels" value="almost" checked><p>Nearly Completed</p>
+									<input type="radio" name="fundingLevels" value="new"><p> Just Started</p>
+									<input type="radio" name="fundingLevels" value="ongoing"><p> Ongoing</p>
+								</div>
+							</div>
+							
+							<div class="causes">
+								<h2>Causes</h2>
+								<div class="causesList">
+									<div class="causesList1">
+										<a>Education</a>
+									</div>
+									<div class="causesList2">
+										<a>Health</a>
+									</div>
+									<div class="causesList3">
+										<a>Children</a>
+									</div>
+									<div class="causesList4">
+										<a>Women Empowerment</a>
+									</div>
+									<div class="causesList5">
+										<a>Food and Hunger</a>
+									</div>
+									<div class="causesList1">
+										<a>Sports</a>
+									</div>
+									<div class="causesList1">
+										<a>Animal Welfare</a>
+									</div>
+									<div class="causesList1">
+										<a>Enviroment</a>
+									</div>
+									<div class="causesList6">
+										<a>Others</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			<a href="index.html"><div class="title"><h2 class="titleReimagine">Re!magine</h2><h2 class="titleGiving">Giving</h2></div></a>
+			<h2 id="registration"><span onclick="openSignUpOverlay()">Log In</span></h2>
+				<div id="SignUp" class="overlay">
+					<div class="transparentContainer">
+						<div class="translucentContainer"></div>
+							<!-- overlay content -->
+						<div class="overlay-content">
+							
+							<div id="SignUpForms">
+								<ul class="registrationTabs">
+									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
+									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
+									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
+								</ul>
+								<form>
+									<div id="Donor" class="tabcontent">
+										<div class="inputFieldHeadings">
+											<h2>First Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="FirstName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Last Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="LastName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Mobile Number</h2>
+											<div class="inputField">
+												<input type="digits" name="search" placeholder="+91-9999999999">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+											<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
+											<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login</span></p>
+										</div>
+									</div>
+								</form>
+								<form>
+								<div id="NGO" class="tabcontent">
+									<div class="inputFieldHeadings">
+										<h2>Oraganization Name</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="Oraganization Name">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Contact Person</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="FirstName LastName">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Email ID</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="xyz@mail.com">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Mobile Number</h2>
+										<div class="inputField">
+											<input type="digits" name="search" placeholder="+91-9999999999">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Password</h2>
+										<div class="inputField">
+											<input type="password" name="search" placeholder="********">
+										</div>
+									</div>
+									<div class="inputFieldHeadings row">
+										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
+										<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login	</span></p>
+									</div>
+								</div>
+							</form>
+							</div>
+							<div id="LogInOverlay">
+								<ul class="registrationTabs">
+									<li><h2>LOGIN</h2></li>
+									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a></li>
+								</ul>
+								<form>
+									<div id="LogInDetails">
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+												<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">LogIn</span></h2>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="dropdown" id="Profile">
+				<h2><a class="dropbtn">Donor</a></h2>
+				<div class="dropdown-content">
+					<a href="#">My Profile</a>
+					<span onclick="logout()"><p class="logout">Log out</p></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="slideshow row">
+		<div class="w3-content w3-display-container row">
+			<div class="image"><img class="mySlides" src="DSC_0115.jpg" ></div>	  
+			<div class="image"><img class="mySlides" src="DSC_0126_.jpg" ></div>
+			<div class="image"><img class="mySlides" src="DSC_0133__.jpg"></div>
+			<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;&#10094;</div>
+				<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;&#10095;</div>
+			</div>
+		</div>
+	</div>
+	<script src="slideshow.js"></script>
+	
+	<div class="mainStats row">
+		<div class="mainStats1 col-3">
+			<div class="mainStatsNumber row">
+				<p>Rs 900000</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Raised</p>
+			</div>
+		</div>
+		<div class="mainStats2 col-3">
+			<div class="mainStatsNumber row">
+				<p>Rs 1000000</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Required</p>
+			</div>
+		</div>
+		<div class="mainStats3 col-3">
+			<div class="mainStatsNumber row">
+				<p>912</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Backers</p>
+			</div>
+		</div>
+		<div class="mainStats4 col-3">
+			<div class="mainStatsNumber row">
+				<p>912</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Backers</p>
+			</div>
+		</div>
+	</div>
+		
+	<div class="about_us">
+		<div class="heading_in_about_us "><h2>About Us</h2></div>
+		<div class="row">
+			<div class="about_us sect1 col-4">
+				<h2 class="hInSect">Who are we?</h2>
+				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+				</p>
+			</div>
+			<div class="about_us sect2 col-4">
+				<h2 class="hInSect">The Trust Factor</h2>
+				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+				</p>
+			</div>
+			<div class="about_us sect3 col-4">
+				<h2 class="hInSect">Stay Connected</h2>
+				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="projects">
+		<div  class="heading_in_Projects"><h2>Recommended Projects for you</h2>
+		<div class="row">
+			<div class="projectsSect1 col-3">
+				<div class="projectsSection row">
+					<div class="thumbnail">
+						<img class="img-thumbnail" src="DSC_0115.jpg" >
+						<div class="locationCause row">
+							<div class="col-6"><p style="float:left">Cause</p></div>
+							<div class="col-6"><p style="float:right">Location</p></div>
+						</div>
+					</div>
+					<div class="projectDetails">
+						<h2 class="hInProjectSect">Stay Connected</h2>
+						<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+						</p>
+					</div>
+					<div class="projectStats">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
+								<p>90%</p>
+							</div>
+							<div class="progressText col-6">
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="progress"><progress  id="progressbar" value="90" max="100"></progress></div>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 900000</p>
+								</div>
+							</div>
+							<div class="Stats2 col-4">
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 1000000</p>
+								</div>
+							</div>
+							<div class="Stats3 col-4">
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>912</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectsSect2 col-3">
+				<div class="projectsSection row">
+					<div class="projectThumbnail">
+						<div class="thumbnail w3-container">
+							<img class="img-thumbnail" src="DSC_0126_.jpg" >
+							<div class="locationCause row">
+								<div class="col-6"><p style="float:left">Cause</p></div>
+								<div class="col-6"><p style="float:right">Location</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="projectDetails">
+						<h2 class="hInProjectSect">Stay Connected</h2>
+						<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+						</p>
+					</div>
+					<div class="projectStats">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
+								<p>30%</p>
+							</div>
+							<div class="progressText col-6">
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="progress row"><progress id="progressbar" value="30" max="100"></progress></div>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 600000</p>
+								</div>
+							</div>
+							<div class="Stats2 col-4">
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 2000000</p>
+								</div>
+							</div>
+							<div class="Stats3 col-4">
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>543</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectsSect3 col-3">
+				<div class="projectsSection row">
+					<div class="projectThumbnail">
+						<div class="thumbnail">
+							<img class="img-thumbnail" src="DSC_0133__.jpg" >
+							<div class="locationCause row">
+								<div class="col-6"><p style="float:left">Cause</p></div>
+								<div class="col-6"><p style="float:right">Location</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="projectDetails">
+						<h2 class="hInProjectSect">Stay Connected</h2>
+						<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+						</p>
+					</div>
+					<div class="projectStats">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
+								<p>50%</p>
+							</div>
+							<div class="progressText col-6">
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="progress"><progress id="progressbar" value="50" max="100" ></progress></div>
+						<div class="row">
+							<div class="Stats1 col-4">
+								
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 250000</p>
+								</div>
+							</div>
+							<div class="Stats2 col-4">
+								
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 500000</p>
+								</div>
+							</div>
+							<div class="Stats3 col-4">
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>402</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectsSect4 col-3">
+				<div class="projectsSection row">
+					<div class="projectThumbnail">
+						<div class="thumbnail">
+							<img class="img-thumbnail" src="DSC_0115.jpg" >
+							<div class="locationCause row">
+								<div class="col-6"><p style="float:left">Cause</p></div>
+								<div class="col-6"><p style="float:right">Location</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="projectDetails">
+						<h2 class="hInProjectSect">Stay Connected</h2>
+						<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
+						</p>
+					</div>
+					<div class="projectStats">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
+								<p>40%</p>
+							</div>
+							<div class="progressText col-6">
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="progress"><progress id="progressbar" value="40" max="100"></progress></div>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 1026800</p>
+								</div>
+							</div>
+							<div class="Stats2 col-4">
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>Rs 2567000</p>
+								</div>
+							</div>
+							<div class="Stats3 col-4">
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
+								<div class="StatsNumber row">
+									<p>712</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">Copyright © Trust</div>
+	</footer>
+</body>

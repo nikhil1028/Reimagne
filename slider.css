@@ -1,0 +1,56 @@
+.w3-content{
+	max-width:100%;
+	margin:auto;
+}
+.w3-content.w3-display-container {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 41.5vw;
+}
+.w3-content.w3-display-container > div > img {
+	max-width: 100%;
+	width: auto\9;
+}
+.w3-display-bottommiddle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-size: 40px;
+	letter-spacing: -6px;
+}
+.w3-left, .w3-right{
+	color: #00a8e3;
+	cursor:pointer;
+}
+.w3-border {
+    border: 1px solid #ccc !important;
+}
+.w3-padding-left {
+    padding-left: 20px !important;
+}
+.w3-padding-right {
+    padding-right: 20px !important;
+}
+.w3-left {
+    float: left !important;
+}
+.w3-right {
+    float: right !important;
+}
+.w3-transparent {
+    background-color: transparent !important;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #fff !important;
+}
+.w3-text-black,.w3-hover-text-black:hover{
+	color:#000!important;
+}

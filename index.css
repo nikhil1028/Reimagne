@@ -1,0 +1,251 @@
+body {
+	background: #0b5ca1 ;
+	font-family: BebasNeue_Bold;
+	font-size: 15pt;
+	margin:0;
+	padding:0;
+}
+
+footer{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+/*main Stats*/
+.mainStats{
+	background: #00a8e3 !important;
+}
+.mainStats1, .mainStats2, .mainStats3, .mainStats4{
+	float: left;
+	display: inline-block;
+	padding-top: 0.7%;
+	padding-bottom: 0.7%;
+	margin: 0;
+}
+.mainStatsNumber > p{
+	margin: 0;
+	padding:0;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.mainStatsText > p{
+	margin: 0;
+	padding:0;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+
+/*about_us*/
+.about_us{
+	max-width:100%;
+	padding: 0;
+	margin: 0;
+	background: #092d3d ;
+}
+
+.heading_in_about_us{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-family: BebasNeue_Light;
+	font-size: 15pt;
+	border-bottom: 4px solid #00a8e3;
+}
+.heading_in_about_us>h2{
+	margin:0px;
+	padding-top: 0.75%;
+	padding-bottom: 0.75%;
+}
+
+.about_us > p {
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+.about_us.sect1, .about_us.sect2, .about_us.sect3{
+	padding-bottom: 1%;
+	padding: 1%;
+	display: inline-block;
+	float: left;
+}
+
+.hInSect{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	margin-top: 20px;
+}
+
+/*projects*/
+.projects{
+	max-width:100%;
+}
+
+.row{
+	/*! display: inline-block; */
+	/*! margin: 0; */ 
+	width: 100%;
+}
+
+.heading_in_Projects{
+	background: white;
+	margin: 0;
+	padding: 0;
+}
+.heading_in_Projects > h2{
+	color: white;
+	text-align: center;
+	/*! font-size: 40px; */
+	margin: 0;
+	width: 100%;
+	padding-top: 0.75%;
+	padding-bottom: 0.75%;
+	border-bottom: 4px solid;
+	border-top:  4px solid;
+	background-color: #058bba;
+}
+
+.projects > p {
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+.projectsSect1, .projectsSect2, .projectsSect3, .projectsSect4{
+	padding: 1%;
+	display: inline-block;
+	background-color: white;
+	float: left;
+	margin: 0;
+}
+
+.projectsSection{
+	border: 1px solid;
+	background-color: white;
+}
+
+.hInProjectSect{
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	margin-top: 2px;
+	padding-left: 1%;
+}
+
+.thumbnail{
+	position: relative;
+}
+.thumbnail > img{
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+}
+.locationCause{
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	opacity: 0.7;
+	width: 100%;
+}
+.thumbnail p{
+	margin: 4px;
+	font-weight: bold;
+}
+.fa-map-marker {
+    content: "\f041";
+}
+
+.projectDetails > p {
+	font-size: 12px;
+	color: black;
+	text-align: left;
+	padding-left: 1%;
+}
+
+.progress{
+	margin-bottom: 10px;
+	margin-top: 0;
+	padding: 0.5%;
+	border-radius: 10px;
+}
+
+.progressReport{
+	margin-top: 50px;
+}
+
+.progressReport > p{
+	font-size: 10px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.progressNumber{
+	float: left;
+	padding-left: 1%;
+}
+
+.progressText{
+	padding-right: 1%;
+	float: right;
+}
+
+.progressNumber > p, .progressText > p{
+	margin-bottom:0;
+	font-weight: bold;
+	color: black;
+}
+.progressText > p{
+	float: right;
+}
+
+.progress > progress{
+	height: 10px;
+	width: 99.5%;
+	border:1px solid;
+	border-radius: 10px;
+}
+
+#progressbar::-moz-progress-bar {
+  background-color: #0b5ca1 ;
+}
+
+.Stats1, .Stats2, .Stats3{
+	margin: 0;
+	float: left;
+	padding: 0.5%;
+	display: inline-block;
+	text-align: center;
+}
+
+.StatsNumber > p{
+	margin: 0;
+	padding-left: 1%;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.StatsText > p{
+	margin: 0;
+	padding-left: 1%;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+
+/*footer*/
+.footer{
+	padding: 1%;
+	text-align: center;
+}
