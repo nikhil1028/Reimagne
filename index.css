@@ -172,7 +172,7 @@ footer{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	display: inline-block;
-	background-color: #bbb9b9;
+	background-color: #c4c4c4;
 	float: left;
 	margin: 0;
 }
@@ -196,7 +196,7 @@ footer{
 
 .projectsSection{
 	border: 1px solid;
-	background-color: #121212;
+	background-color: #2a2a2a;
 	font-family: BebasNeue_Book;
 	Letter-spacing: 1px;
 }
