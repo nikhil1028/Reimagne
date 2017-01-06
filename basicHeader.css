@@ -4,6 +4,19 @@ header{
 	margin:0;
 	background-color: #0b5ca1 ;
 }
+body {
+	background: black;
+	font-family: BebasNeue_Thin;
+	font-size: 14pt;
+	margin:0;
+	padding:0;
+}
+
+footer{
+	text-align: center;
+	color: white;
+	background-color: #092d3d;
+}
 
 header h2{
 	margin: 0;
