@@ -1,6 +1,7 @@
 /*main Stats*/
 .mainStats{
 	background: #00a8e3 !important;
+	color: white;
 }
 .mainStats1, .mainStats2, .mainStats3, .mainStats4{
 	float: left;
@@ -18,7 +19,6 @@
 	margin: 0;
 	padding:0;
 	font-weight: bold;
-	color: white;
 	text-align: center;
 	letter-spacing: 1px;
 }
@@ -28,7 +28,6 @@
 	padding:0;
 	font-family: BebasNeue_Book;
 	font-weight: bold;
-	color: white;
 	text-align: center;
 	border-bottom: 2px solid white;
 	letter-spacing: 1px;
@@ -41,6 +40,8 @@
 	padding: 0;
 	margin: 0;
 	background: #092d3d;
+	color: white;
+	margin-top: 2%;
 }
 
 .about_us.row{
@@ -51,22 +52,19 @@
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	background-color: black;
-	color: white;
-	font-family: BebasNeue_Light;
+	background-color: #058bba;
+	font-family: BebasNeue_Regular;
 	font-size: 15pt;
-	border-bottom: 4px solid #00a8e3;
+	border-bottom: 5px solid ;
 }
 .heading_in_about_us>h2{
 	margin:0px;
-	padding-top: 0.75%;
-	padding-bottom: 0.75%;
+	font-size: 30pt;
 }
 
 .about_us.sect1, .about_us.sect2, .about_us.sect3{
 	display: inline-block;
 	float: left;
-	color: white;
 	font-family: BebasNeue_Bold;
 	height: 16.2vw;
 	background-size: cover;
@@ -103,23 +101,13 @@
 	margin-top: 50px;
 	margin-left: -2% !important;
 }
-.aboutUsStats.text1{
-	font-size: 22pt;
-	font-family: BebasNeue_Thin;
-	text-align: center;
-	line-height: 0%;
-}
-.aboutUsStats.text2{
+.aboutUsStats.text1, .aboutUsStats.text2, .aboutUsStats.text3{
 	font-size: 22pt;
 	font-family: BebasNeue_Thin;
 	text-align: center;
 	line-height: 0%;
 }
 .aboutUsStats.text3{
-	font-size: 22pt;
-	font-family: BebasNeue_Thin;
-	text-align: center;
-	line-height: 0;
 	margin-left: 31% !important;
 }
 
@@ -128,70 +116,80 @@
 /*projects*/
 .projects{
 	max-width:100%;
+	border-bottom: 10px solid #058bba;
+	color: #333;	
+	margin-top: 2%;
 }
 
 .heading_in_Projects{
 	background: white;
+	color: white;
 	margin: 0;
 	padding: 0;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
 }
 .heading_in_Projects > h2{
-	color: white;
 	text-align: center;
 	margin: 0;
 	width: 100%;
-	padding-top: 0.75%;
-	padding-bottom: 0.75%;
-	border-bottom: 4px solid;
-	border-top:  4px solid;
+	padding-top: 0.3%;
 	background-color: #058bba;
 	font-family: BebasNeue_Bold;
+	font-size: 30pt;
 }
 .projects.row{
 	background-color: black;
+	
 }
 .projects > p {
 	font-size: 15px;
-	color: white;
 	text-align: center;
 }
 
 .projectsSect1, .projectsSect2, .projectsSect3, .projectsSect4{
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	display: inline-block;
-	background-color: black;
+	background-color: white;
 	float: left !Important;
 	margin: 0;
+	/*! margin-left: 6.25%; */
 }
 
 .projectsSect2{
-	padding-left: 0.5%;
-	padding-right: 0.5%;
+	padding-left: 3.125%;
+	padding-right: 3.125%;
 }
 .projectsSect3{
-	padding-left: 0.5%;
-	padding-right: 0.5%;
+	padding-left: 2%;
+	padding-right: 4.25%;
 }
 .projectsSect4{
 	padding-left: 0.5%;
 	padding-right: 1%;
+	display: none;
 }
 .projectsSect1{
-	padding-left: 1%;
-	padding-right: 0.5%;
+	padding-left: 4.25%;
+	padding-right: 2%;
 }
 
 .projectsSection{
-	background-color: #23a4d1;
+	background-color: #f3f4f4;
 	font-family: BebasNeue_Book;
 	Letter-spacing: 1px;
+}
+.projectStats{
+	/*! padding: 12px; */
+}
+.projectDetails{
+	margin: 15px;
 }
 
 .hInProjectSect{
 	text-align: left;
 	font-size: 20px;
-	color: white;
 	margin-top: 2px;
 	padding-left: 1%;
 	margin-bottom: 0;
@@ -200,11 +198,13 @@
 .thumbnail{
 	position: relative;
 	content: " ";
+	height: 13vw;
+	overflow: hidden;
 }
 .thumbnail > img{
 	position: relative;
 	max-width: 100%;
-	height: 16vw;
+	/*! height: 13vw; */
 	margin: 0;
 }
 .locationCause{
@@ -217,16 +217,16 @@
 	font-family: BebasNeue_Bold;
 }
 .cause{
-	bottom: 5px;
+	bottom: 0;
 	position: absolute;
 	left: 0;
 	padding-left: 5px;
-	background-color: #295b66;
-	opacity: 0.9;
+	background-color: #058bba;
+	opacity: 0.85;
 }
 .projectLocation{
 	font-size: 13px;
-	bottom: 5px;
+	bottom: 0;
 	right: 0;
 	position: absolute; 
 }
@@ -241,15 +241,9 @@
 
 .projectDetails > p {
 	font-size: 12px;
-	color: white;
 	text-align: left;
 	padding-left: 1%;
 	margin-top: 0;
-}
-
-.progress{
-	padding: 0.5%;
-	border-radius: 10px;
 }
 
 .progressReport > p{
@@ -259,8 +253,7 @@
 }
 
 .progressNumber{
-	float: left;
-	padding-left: 1%;
+	padding-right: 2%;
 }
 
 .progressText{
@@ -271,7 +264,6 @@
 .progressNumber > p, .progressText > p{
 	margin-bottom:0;
 	font-weight: bold;
-	color: white;
 	margin-top: 0;
 	float: right;
 	margin-right: 13px;
@@ -284,8 +276,9 @@
 
 .progress > progress{
 	height: 9px;
-	width: 100%;
+	width: 95%;
 	margin: 2.5%;
+	margin-left: 5%;
 }
 .progressReport{
 	margin-top: 20px;
@@ -303,23 +296,19 @@
 	text-align: center;
 	font-family: BebasNeue_Light;
 	letter-spacing: 0.5px;
+	background-color: #333;
+	color: #f3f4f4;
+	
 }
 .StatsNumber, .StatsText{
 	margin-left: 12.5%;
 }
 .StatsText{
-	border-bottom: 1.5px solid white;
+	border-bottom: 1.5px solid #f3f4f4;
 }
-.StatsNumber > p{
+.StatsNumber p, .StatsText p{
 	margin: 0;
 	font-weight: bold;
-	color: white;
-}
-
-.StatsText > p{
-	margin: 0;
-	font-weight: bold;
-	color: white;
 }
 
 /*footer*/
